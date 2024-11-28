@@ -3,87 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Descubre Montes de María</title>
+    <title>Turismo Montes de María</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Encabezado Fijo -->
     <header>
-        <div class="header-content">
-            <div class="logo">
-                <h1>Descubre Montes de María</h1>
-                <img src="imagenes/pareja bailando.jpg" alt="Logo" class="logo-img">
-            </div>
+        <div class="container">
+            <h1>Descubre los Montes de María</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#destinos">Destinos</a></li>
-                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#sobre">Sobre Nosotros</a></li>
+                    <li><a href="#atracciones">Atracciones</a></li>
+                    <li><a href="#galeria">Galería</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="search">
-                <button>🔍</button>
-            </div>
         </div>
     </header>
 
-    <!-- Banner Principal -->
-    <section id="home" class="banner">
-        <div class="banner-content">
-            <h2>Explora la Belleza de los Montes de María</h2>
-            <button>Reserva ahora</button>
+    <section id="sobre" class="section sobre">
+        <div class="container">
+            <h2>Sobre Montes de María</h2>
+            <p>Los Montes de María son una región rica en cultura, naturaleza y aventura. Ven y explora lo que esta hermosa región tiene para ofrecer.</p>
         </div>
     </section>
 
-    <!-- Sección de Destinos Destacados -->
-    <section id="destinos" class="destinos">
-        <h2>Destinos Destacados</h2>
-        <div class="destinos-container">
-            <div class="destino">
-                <img src="imagenes/montañas.jpg" alt="Cerro de San Antonio">
-                <p><strong>Cerro de San Antonio</strong><br>Un lugar lleno de historia</p>
-                <button>Ver más</button>
+    <section id="atracciones" class="section atracciones">
+        <div class="container">
+            <h2>Atracciones Turísticas</h2>
+            <div class="card">
+                <h3>Parque Natural</h3>
+                <p>Disfruta de la fauna y flora nativa en nuestros impresionantes parques naturales.</p>
             </div>
-            <div class="destino">
-                <img src="imagenes/iglesia.jpg" alt="El Carmen de Bolívar">
-                <p><strong>El Carmen de Bolívar</strong><br>Un destino lleno de encanto</p>
-                <button>Explorar</button>
+            <div class="card">
+                <h3>Cultura Local</h3>
+                <p>Sumérgete en la cultura local a través de festivales, música y tradiciones.</p>
             </div>
-            <div class="destino">
-                <img src="imagenes/rios_con_letras.jpg" alt="Parque Natural de los Montes de María">
-                <p><strong>Parque Natural de los Montes de María</strong><br>Un paraíso natural</p>
-                <button>Descubre</button>
+            <div class="card">
+                <h3>Aventura al Aire Libre</h3>
+                <p>Practica senderismo, ciclismo y otras actividades al aire libre en paisajes espectaculares.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Promociones Especiales -->
-    <section id="promociones" class="promociones">
-        <div class="promo-banner">
-            <p>Oferta del mes: ¡15% de descuento en tours culturales!</p>
-            <button>Aprovecha la oferta</button>
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="imagen1.jpg" alt="Imagen 1">
+                <img src="imagen2.jpg" alt="Imagen 2">
+                <img src="imagen3.jpg" alt="Imagen 3">
+                <img src="imagen4.jpg" alt="Imagen 4">
+            </div>
         </div>
     </section>
 
-    <!-- Pie de Página -->
-    <footer id="contacto">
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <div class="quick-links">
-            <a href="#">Términos y condiciones</a>
-            <a href="#">Políticas de privacidad</a>
-        </div>
-        <div class="contact-info">
-            <p>Correo: contacto@montesdemaria.com</p>
-            <p>Teléfono: +57 123 456 789</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Turismo Montes de María. Todos los derechos reservados.</p>
         </div>
     </footer>
-
 </body>
 </html>
