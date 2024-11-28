@@ -1,75 +1,29 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f8ff;
-    color: #333;
 }
 
 header {
-    background: #56A5D8;
-    color: white;
-    padding: 20px 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 1  20px;
 }
 
-header h1 {
+.hero {
     text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.section {
-    padding: 60px 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.card {
-    background: #ffeb3b;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.gallery {
+.actividades {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.gallery img {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-footer {
-    background: #56A5D8;
-    color: white;
+.actividad {
+    width: 300px;
     text-align: center;
-    padding: 20px 0;
+    margin: 10px;
 }
