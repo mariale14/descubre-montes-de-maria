@@ -1,224 +1,75 @@
-/* Reseteo básico de estilos */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: #f0f8ff;
+    color: #333;
 }
 
-/* Estilo general del body */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Fondo de página claro */
-    display: flex;
-    flex-direction: column; /* Organiza los elementos en una columna */
-    min-height: 100vh;
-}
-
-/* Estilos del Header */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333; /* Fondo oscuro para el header */
+    background: #56A5D8;
     color: white;
-    padding: 10px 0;
-    z-index: 100;
+    padding: 20px 0;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-header .logo h1 {
-    font-size: 1.8rem;
-    margin-right: 10px;
-}
-
-header .logo img {
-    width: 40px;
-    height: auto;
+header h1 {
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
-header .search button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
+.section {
+    padding: 60px 20px;
 }
 
-/* Banner Principal */
-.banner {
-    width: 100%;
-    height: 400px;
-    background-image: url('imagenes/paisajes.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-top: 70px; /* Para no tapar el header fijo */
-}
-
-.banner-content h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.banner-content button {
-    padding: 15px 30px;
-    background-color: #ff6347;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Sección de Destinos Destacados */
-.destinos {
-    padding: 80px 20px;
-    text-align: center;
+.container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
-.destinos h2 {
-    font-size: 2.5rem;
+h2 {
+    text-align: center;
     margin-bottom: 30px;
 }
 
-.destinos-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.destino {
-    background-color: white;
+.card {
+    background: #ffeb3b;
+    padding: 20px;
+    margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.destino img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f4f4f4;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.destino p {
-    padding: 10px;
-    font-size: 1.1rem;
-    color: #333;
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.destino button {
-    padding: 10px;
-    background-color: #ff6347;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-/* Sección de Promociones Especiales */
-.promociones .promo-banner {
-    background-color: #f8c307;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    margin-top: 50px;
-}
-
-.promociones .promo-banner p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.promociones .promo-banner button {
-    padding: 10px 30px;
-    background-color: #ff6347;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Estilos del Pie de Página */
 footer {
-    background-color: #333;
+    background: #56A5D8;
     color: white;
-    padding: 40px 20px;
     text-align: center;
-    margin-top: 80px;
-}
-
-footer .social-media a,
-footer .quick-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-footer .contact-info p {
-    margin-top: 10px;
-}
-
-
-@media screen and (max-width: 768px) {
-    header .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .destinos-container {
-        grid-template-columns: 1fr; 
-    }
-
-    .banner-content h2 {
-        font-size: 2rem; 
-    }
+    padding: 20px 0;
 }
