@@ -2,74 +2,112 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f8ff;
     color: #333;
 }
 
 header {
-    background: #56A5D8;
+    background-color: #4CAF50;
     color: white;
-    padding: 20px 0;
-}
-
-header h1 {
-    text-align: center;
-}
-
-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+header nav a {
     color: white;
     text-decoration: none;
 }
 
-.section {
-    padding: 60px 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-h2 {
+.banner {
+    position: relative;
+    margin-top: 60px;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.card {
-    background: #ffeb3b;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
-.gallery {
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.cta-button {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.destinos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.destinos-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.gallery img {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
+.destino {
+    text-align: center;
+    width: 30%;
+}
+
+.destino img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+}
+
+.button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.promociones {
+    background-color: #FFEB3B;
+    padding: 20px;
+    text-align: center;
+}
+
+.promo-button {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 footer {
-    background: #56A5D8;
+    background-color: #333;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
